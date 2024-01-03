@@ -1,4 +1,4 @@
-import puppeteer, { Puppeteer, KnownDevices } from "puppeteer";
+import puppeteer, { KnownDevices } from "puppeteer";
 import { setTimeout } from 'node:timers/promises';
 
 const browser = await puppeteer.launch({
