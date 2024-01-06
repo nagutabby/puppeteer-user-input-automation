@@ -21,6 +21,7 @@ for (const prefecture of prefectures) {
   await page.emulate(KnownDevices["Pixel 5"]);
 
   await page.goto(baseURL + prefecture, { waitUntil: 'networkidle0' });
+  await page.reload({ waitUntil: 'networkidle0' });
 
   const rawResources: string = await page.evaluate(() => {
     const resources = performance.getEntriesByType('resource');

@@ -23,7 +23,14 @@ for (const prefecture of prefectures) {
 
   await page.goto(baseURL + prefecture, { waitUntil: 'networkidle0' });
 
-  const zoomInButton = await page.$(".leaflet-control-zoom-in");
+  let zoomInButton = await page.$(".leaflet-control-zoom-in");
+  await zoomInButton?.click();
+
+  await setTimeout(20000);
+
+  await page.reload({ waitUntil: 'networkidle0' });
+
+  zoomInButton = await page.$(".leaflet-control-zoom-in");
   await zoomInButton?.click();
 
   await setTimeout(20000);

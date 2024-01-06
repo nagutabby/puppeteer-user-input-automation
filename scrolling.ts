@@ -28,6 +28,17 @@ for (const prefecture of prefectures) {
   await page.mouse.move(0, -851);
   await page.mouse.up();
 
+  await page.mouse.move(0, 0);
+
+  await setTimeout(20000);
+
+  await page.reload({ waitUntil: 'networkidle0' });
+
+  await page.mouse.down();
+  // 1ページ下にスクロールする
+  await page.mouse.move(0, -851);
+  await page.mouse.up();
+
   await setTimeout(20000);
 
   const rawResources: string = await page.evaluate(() => {
