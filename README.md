@@ -6,6 +6,6 @@ nvm i
 nvm use
 pnpm i
 pnpm tsx default.ts
-pnpm tsx pageScrolling.ts
+pnpm tsx scrolling.ts
 pnpm tsx zoomIn.ts
 ```

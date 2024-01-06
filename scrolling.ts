@@ -65,7 +65,7 @@ for (const prefecture of prefectures) {
     });
   });
 
-  const outputFile = "pageScrolling.csv";
+  const outputFile = "scrolling.csv";
 
   if (!fs.existsSync(outputFile)) {
     fs.writeFileSync(outputFile, output_array_title.join(",") + "\n");
