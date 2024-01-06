@@ -28,7 +28,7 @@ for (const prefecture of prefectures) {
   await page.mouse.move(0, -851);
   await page.mouse.up();
 
-  await setTimeout(10000);
+  await setTimeout(20000);
 
   const rawResources: string = await page.evaluate(() => {
     const resources = performance.getEntriesByType('resource');

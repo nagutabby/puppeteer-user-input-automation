@@ -26,7 +26,7 @@ for (const prefecture of prefectures) {
   const zoomInButton = await page.$(".leaflet-control-zoom-in");
   await zoomInButton?.click();
 
-  await setTimeout(10000);
+  await setTimeout(20000);
 
   const rawResources: string = await page.evaluate(() => {
     const resources = performance.getEntriesByType('resource');
