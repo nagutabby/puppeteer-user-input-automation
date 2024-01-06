@@ -1,5 +1,4 @@
 import puppeteer, { KnownDevices } from "puppeteer";
-import { setTimeout } from 'node:timers/promises';
 import fs from "fs";
 
 const prefectures = [
