@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@sitespeed.io/throttle": "^5.0.0",
     "@types/node": "^20.10.6",
     "lighthouse": "^11.4.0",
     "puppeteer": "^21.6.1",
